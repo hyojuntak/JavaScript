@@ -48,3 +48,97 @@ function sayHello2(name,age){
 }
 sayHello2("Jun","22");
 
+/************************************************************ */
+
+//$사용
+function sayHello3(name,age){
+   return `Hello my name is ${name}. ${age} years of age.`;
+}
+sayHello3("Jun","22");
+
+const greetNicolas = sayHello3("Nicolas","21");
+console.log(greetNicolas);
+
+//객체 안에 함수 만들기 
+//객체 안에 여러 개의 함수 못만드나요??
+//노가다로 풀긴했음..
+// const calculator1 = {
+//     plus : function(a,b){
+//         return a + b;
+//     }
+// }
+// const calculator2 = {
+    
+//     minus : function(a,b){
+//         return a - b;
+//     }
+// }
+// const calculator3 = {
+    
+//     multiply : function(a,b){
+//         return a * b;
+//     }
+// }
+// const calculator4 = {
+    
+//     mode : function(a,b){
+//         return a / b;
+//     }
+// }
+// const calculator5 = {
+    
+//     sqrt : function(a,b){
+//         return Math.sqrt(a,b);
+//     }
+// }
+    
+// const plus = calculator1.plus(5,5);
+// const minus = calculator2.minus(5,5);
+// const multiply = calculator3.multiply(5,5);
+// const mode = calculator4.mode(5,5);
+// const sqrt = calculator5.sqrt(5,5);
+
+// console.log(plus);
+// console.log(minus);
+// console.log(multiply);
+// console.log(mode);
+// console.log(sqrt);
+
+
+
+
+
+//다시 시도! 객체 안에 여러 함수 만들기!
+//알고보니 함수사이에 ,를 안찍어줬다는..
+
+const calculator = {
+    plus : function(a,b){
+        return a+b;
+    },
+    minus : function(a,b){
+        return a-b;
+    },
+    multiply : function(a,b){
+    return a * b;
+    },
+    mode : function(a,b){
+    return a / b;
+    },
+    sqrt : function(a,b){
+    return Math.sqrt(a,b);
+    }
+
+}
+
+const plus = calculator.plus(5,5);
+const minus = calculator.minus(5,5);
+const multiply = calculator.multiply(5,5);
+const mode = calculator.mode(5,5);
+const sqrt = calculator.sqrt(5,5);
+
+console.log(plus);
+console.log(minus);
+console.log(multiply);
+console.log(mode);
+console.log(sqrt);
+
