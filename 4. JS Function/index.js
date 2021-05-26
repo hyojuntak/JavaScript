@@ -48,7 +48,10 @@ function sayHello2(name,age){
 }
 sayHello2("Jun","22");
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f2ad6f760858d827fc1c8b91d5437324d9ffc8ee
 /************************************************************ */
 
 //$사용
@@ -143,8 +146,11 @@ console.log(multiply);
 console.log(mode);
 console.log(sqrt);
 
+<<<<<<< HEAD
 
 
 
 
 
+=======
+>>>>>>> f2ad6f760858d827fc1c8b91d5437324d9ffc8ee
